@@ -1,6 +1,6 @@
 import isUrl from 'is-url';
 
-const validateUrl = (props, propName, componentName) => {
+const urlPropType = (props, propName, componentName) => {
   const value = props[propName];
   if (value == null || isUrl(value)) {
     return null;
@@ -9,7 +9,7 @@ const validateUrl = (props, propName, componentName) => {
   throw new TypeError(`Invalid URL Prop Value: ${value} for ${propName} in ${componentName}`);
 };
 
-const validateRequiredUrl = (props, propName, componentName) => {
+const requiredUrlPropType = (props, propName, componentName) => {
   const value = props[propName];
 
   if (isUrl(value)) {
@@ -19,6 +19,6 @@ const validateRequiredUrl = (props, propName, componentName) => {
   throw new TypeError(`Invalid URL Prop Value: ${value} for ${propName} in ${componentName}`);
 };
 
-validateUrl.isRequired = validateRequiredUrl;
+urlPropType.isRequired = requiredUrlPropType;
 
-export default validateUrl;
+export default urlPropType;
