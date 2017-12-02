@@ -1,7 +1,9 @@
+[![Build Status](https://travis-ci.org/jaebradley/url-prop-type.svg?branch=master)](https://travis-ci.org/jaebradley/url-prop-type)
+[![codecov](https://codecov.io/gh/jaebradley/prop-types-url-validator/branch/master/graph/badge.svg)](https://codecov.io/gh/jaebradley/prop-types-url-validator)
 [![npm](https://img.shields.io/npm/dt/url-prop-type.svg)](https://www.npmjs.com/package/url-prop-type)
 [![npm](https://img.shields.io/npm/v/url-prop-type.svg)](https://www.npmjs.com/package/url-prop-type)
 
-# prop-types-url-validator
+# URL Prop Type
 
 ## Introduction
 This package is used to validate if a React Prop value is a valid URL.
