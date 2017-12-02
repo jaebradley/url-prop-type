@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jaebradley/prop-types-url-validator.git"
+    "url": "git+https://github.com/jaebradley/url-prop-type.git"
   },
   "keywords": [
     "react",
@@ -24,9 +24,9 @@
   "author": "jae.b.bradley@gmail.com",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jaebradley/prop-types-url-validator/issues"
+    "url": "https://github.com/jaebradley/url-prop-type/issues"
   },
-  "homepage": "https://github.com/jaebradley/prop-types-url-validator#readme",
+  "homepage": "https://github.com/jaebradley/url-prop-type#readme",
   "jest": {
     "testEnvironment": "node"
   },
