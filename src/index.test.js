@@ -18,8 +18,8 @@ describe('prop-types-url-validator', () => {
       mockedIsUrl = isUrl.mockImplementation(() => false);
       const props = {};
       props[propName] = url;
-      expect(() => urlPropType(props, propName, componentName))
-        .toThrow(TypeError, `Invalid URL Prop Value: ${url} for ${propName} in ${componentName}`);
+      expect(urlPropType(props, propName, componentName))
+        .toEqual(new TypeError(`Invalid URL Prop Value: ${url} for ${propName} in ${componentName}`));
     });
 
     it('should return null if prop is not defined', () => {
@@ -40,14 +40,14 @@ describe('prop-types-url-validator', () => {
       mockedIsUrl = isUrl.mockImplementation(() => false);
       const props = {};
       props[propName] = url;
-      expect(() => urlPropType.isRequired(props, propName, componentName))
-        .toThrow(TypeError, `Invalid URL Prop Value: ${url} for ${propName} in ${componentName}`);
+      expect(urlPropType.isRequired(props, propName, componentName))
+        .toEqual(new TypeError(`Invalid URL Prop Value: ${url} for ${propName} in ${componentName}`));
     });
 
     it('should throw an error if prop is not defined', () => {
       const props = {};
-      expect(() => urlPropType.isRequired(props, propName, componentName))
-        .toThrow(TypeError, `Invalid URL Prop Value: ${url} for ${propName} in ${componentName}`);
+      expect(urlPropType.isRequired(props, propName, componentName))
+        .toEqual(new TypeError(`Invalid URL Prop Value: undefined for ${propName} in ${componentName}`));
     });
 
     it('should return null if prop value is a valid URL', () => {
