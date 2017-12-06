@@ -6,7 +6,7 @@
 # URL Prop Type
 
 ## Introduction
-This package is used to validate if a React Prop value is a valid URL.
+This package is used to validate if a React Prop value is a valid URL. A valid URL can be a valid absolute URL (like `https://github.com/jaebradley/url-prop-type`) or a relative-absolute URL (starts with a `/`).
 
 Currently, there is no URL prop type defined by [the `prop-types` package](https://www.npmjs.com/package/prop-types). While using `PropType.string` works, why not be as specific as possible when validating your props?
 
@@ -36,4 +36,5 @@ Hyperlink.propTypes = {
 ## Alternatives
 I didn't see many alternatives:
   * It doesn't look like [the `airbnb/prop-types` project](https://github.com/airbnb/prop-types) has URL validation.
+    * Opened [this PR with `airbnb/proptypes`](https://github.com/airbnb/prop-types/pull/35)
   * Similarly, [the `react-proptypes-url-validator` package](https://github.com/kmalone75/react-proptypes-url-validator) didn't seem to implement an `isRequired` option
