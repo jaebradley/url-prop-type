@@ -24,9 +24,7 @@ import PropTypes from 'prop-types';
 import urlPropType from 'url-prop-type';
 
 // Create a basic Hyperlink Component
-const Hyperlink = props => (
-  <a href={props.link}>{props.text}</a>
-);
+const Hyperlink = props => ( <a href={props.link}>{props.text}</a> );
 
 Hyperlink.propTypes = {
   text: PropTypes.string.isRequired,
