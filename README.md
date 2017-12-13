@@ -38,4 +38,4 @@ Hyperlink.propTypes = {
 I didn't see many alternatives:
   * It doesn't look like [the `airbnb/prop-types` project](https://github.com/airbnb/prop-types) has URL validation.
     * Opened [this PR with `airbnb/proptypes`](https://github.com/airbnb/prop-types/pull/35)
-  * Similarly, [the `react-proptypes-url-validator` package](https://github.com/kmalone75/react-proptypes-url-validator) didn't seem to implement an `isRequired` option
+  * Similarly, [the `react-proptypes-url-validator` package](https://github.com/kmalone75/react-proptypes-url-validator) doesn't seem to implement an `isRequired` option
