@@ -1,4 +1,3 @@
-
 import isUrl from 'is-url';
 
 import urlPropType from './index';
