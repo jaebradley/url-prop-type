@@ -47,7 +47,7 @@
     "eslint-plugin-import": "^2.8.0",
     "husky": "^0.14.3",
     "jest": "^22.0.3",
-    "semantic-release": "^8.2.0"
+    "semantic-release": "^11.0.2"
   },
   "dependencies": {
     "is-url": "^1.2.2"
