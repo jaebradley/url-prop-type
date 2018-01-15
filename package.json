@@ -34,7 +34,7 @@
     "@commitlint/cli": "^6.0.0",
     "@commitlint/config-angular": "^5.1.1",
     "@commitlint/prompt": "^6.0.0",
-    "@commitlint/prompt-cli": "^6.0.0",
+    "@commitlint/prompt-cli": "^6.0.2",
     "babel-cli": "^6.26.0",
     "babel-jest": "^22.0.3",
     "babel-preset-es2015": "^6.24.1",
