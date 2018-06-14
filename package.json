@@ -31,10 +31,10 @@
     "testEnvironment": "node"
   },
   "devDependencies": {
-    "@commitlint/cli": "^6.0.0",
-    "@commitlint/config-angular": "^6.0.2",
-    "@commitlint/prompt": "^6.0.0",
-    "@commitlint/prompt-cli": "^6.0.2",
+    "@commitlint/cli": "^7.0.0",
+    "@commitlint/config-angular": "^7.0.1",
+    "@commitlint/prompt": "^7.0.0",
+    "@commitlint/prompt-cli": "^7.0.0",
     "babel-cli": "^6.26.0",
     "babel-jest": "^23.0.0",
     "babel-preset-es2015": "^6.24.1",
