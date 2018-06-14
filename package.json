@@ -11,7 +11,8 @@
     "test": "jest --coverage",
     "prepublishOnly": "npm run compile",
     "semantic-commit": "commit",
-    "semantic-release": "semantic-release"
+    "semantic-release": "semantic-release",
+    "travis-deploy-once": "travis-deploy-once"
   },
   "repository": {
     "type": "git",
@@ -31,10 +32,10 @@
     "testEnvironment": "node"
   },
   "devDependencies": {
-    "@commitlint/cli": "^6.0.0",
-    "@commitlint/config-angular": "^6.0.2",
-    "@commitlint/prompt": "^6.0.0",
-    "@commitlint/prompt-cli": "^6.0.2",
+    "@commitlint/cli": "^7.0.0",
+    "@commitlint/config-angular": "^7.0.1",
+    "@commitlint/prompt": "^7.0.0",
+    "@commitlint/prompt-cli": "^7.0.0",
     "babel-cli": "^6.26.0",
     "babel-jest": "^23.0.0",
     "babel-preset-es2015": "^6.24.1",
@@ -47,7 +48,8 @@
     "eslint-plugin-import": "^2.8.0",
     "husky": "^0.14.3",
     "jest": "^22.0.3",
-    "semantic-release": "^15.0.0"
+    "semantic-release": "^15.0.0",
+    "travis-deploy-once": "^5.0.0"
   },
   "dependencies": {
     "is-url": "^1.2.2"

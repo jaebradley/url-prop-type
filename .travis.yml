@@ -1,4 +1,4 @@
-language: node_js
+anguage: node_js
 cache:
   directories:
     - ~/.npm
@@ -6,18 +6,21 @@ notifications:
   email: true
 node_js:
   - '8'
+install: npm install
 before_install:
-  - npm install -g npm
+  - npm install -g npm@5
   - npm install -g greenkeeper-lockfile@1
-before_script: greenkeeper-lockfile-update
-after_script: greenkeeper-lockfile-upload
-script:
-  - npm run compile
-  - npm run lint
-  - npm run test
-after_success:
-  - npm run semantic-release
-  - npm run codecov
-branches:
-  except:
-    - /^v\d+\.\d+\.\d+$/
+jobs:
+  include:
+    - stage: test
+      script:
+        - npm run compile
+        - npm run lint
+        - npm run test
+      before_script: greenkeeper-lockfile-update
+      after_script: greenkeeper-lockfile-upload
+      after_success: npm run codecov
+    - stage: deploy
+      if: branch = master
+      script: npm run travis-deploy-once "npm run semantic-release"
+
