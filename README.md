@@ -1,10 +1,12 @@
-[![Build Status](https://travis-ci.org/jaebradley/url-prop-type.svg?branch=master)](https://travis-ci.org/jaebradley/url-prop-type)
-[![codecov](https://codecov.io/gh/jaebradley/prop-types-url-validator/branch/master/graph/badge.svg)](https://codecov.io/gh/jaebradley/prop-types-url-validator)
-[![npm](https://img.shields.io/npm/dt/url-prop-type.svg)](https://www.npmjs.com/package/url-prop-type)
-[![npm](https://img.shields.io/npm/v/url-prop-type.svg)](https://www.npmjs.com/package/url-prop-type)
-[![Greenkeeper badge](https://badges.greenkeeper.io/jaebradley/url-prop-type.svg)](https://greenkeeper.io/)
-
 # URL Prop Type
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/jaebradley/url-prop-type.svg)](https://greenkeeper.io/)
+[![Build Status](https://travis-ci.org/jaebradley/url-prop-type.svg?branch=master)](https://travis-ci.org/jaebradley/url-prop-type)
+[![codecov](https://codecov.io/gh/jaebradley/url-prop-type/branch/master/graph/badge.svg)](https://codecov.io/gh/jaebradley/url-prop-type)
+[![npm](https://img.shields.io/npm/v/url-prop-type.svg)](https://www.npmjs.com/package/url-prop-type)
+![npm bundle size](https://img.shields.io/bundlephobia/minzip/url-prop-type)
+[![npm-total-downloads](https://img.shields.io/npm/dt/url-prop-type.svg)](https://www.npmjs.com/package/url-prop-type)
+![GitHub](https://img.shields.io/github/license/jaebradley/url-prop-type)
 
 ## Introduction
 This package is used to validate if a React Prop value is a valid URL. A valid URL can be a valid absolute URL (like `https://github.com/jaebradley/url-prop-type`) or a relative-absolute URL (starts with a `/`).

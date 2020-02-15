@@ -4,15 +4,15 @@
   "description": "React Prop Types URL Validator",
   "main": "./build/index.js",
   "scripts": {
-    "codecov": "codecov",
-    "commitmsg": "commitlint -e $GIT_PARAMS",
-    "compile": "babel -d build/ src/ --ignore node_modules,*.test.js",
-    "lint": "eslint --ext .js .",
-    "test": "jest --coverage",
+    "codecov": "npx codecov",
+    "commitmsg": "npx commitlint -e $GIT_PARAMS",
+    "compile": "npx babel -d build/ src/ --ignore node_modules,*.test.js",
+    "lint": "npx eslint --ext .js .",
+    "test": "npx jest",
     "prepublishOnly": "npm run compile",
-    "semantic-commit": "commit",
-    "semantic-release": "semantic-release",
-    "travis-deploy-once": "travis-deploy-once"
+    "semantic-commit": "npx commit",
+    "semantic-release": "npx semantic-release",
+    "travis-deploy-once": "npx travis-deploy-once"
   },
   "repository": {
     "type": "git",
@@ -28,31 +28,29 @@
     "url": "https://github.com/jaebradley/url-prop-type/issues"
   },
   "homepage": "https://github.com/jaebradley/url-prop-type#readme",
-  "jest": {
-    "testEnvironment": "node"
-  },
   "devDependencies": {
-    "@commitlint/cli": "^7.0.0",
-    "@commitlint/config-angular": "^7.0.1",
-    "@commitlint/prompt": "^7.0.0",
-    "@commitlint/prompt-cli": "^7.0.0",
-    "ajv": "^6.5.1",
-    "babel-cli": "^6.26.0",
-    "babel-jest": "^23.0.0",
-    "babel-preset-es2015": "^6.24.1",
-    "babel-preset-es2016": "^6.24.1",
-    "babel-preset-es2017": "^6.24.1",
-    "babel-preset-stage-0": "^6.24.1",
-    "codecov": "^3.0.2",
-    "eslint": "^5.0.1",
-    "eslint-config-airbnb-base": "^13.0.0",
-    "eslint-plugin-import": "^2.13.0",
-    "husky": "^0.14.3",
-    "jest": "^22.0.3",
-    "semantic-release": "^15.0.0",
-    "travis-deploy-once": "^5.0.0"
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-angular": "^8.3.4",
+    "@commitlint/prompt": "^8.3.5",
+    "@commitlint/prompt-cli": "^8.3.5",
+    "ajv": "^6.11.0",
+    "babel-jest": "^25.1.0",
+    "bufferutil": "^4.0.1",
+    "canvas": "^2.6.1",
+    "codecov": "^3.6.5",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.20.1",
+    "husky": "^4.2.3",
+    "jest": "^25.1.0",
+    "semantic-release": "^17.0.3",
+    "travis-deploy-once": "^5.0.11",
+    "utf-8-validate": "^5.0.2"
   },
   "dependencies": {
-    "is-url": "^1.2.2"
+    "is-url": "^1.2.4"
   }
 }
