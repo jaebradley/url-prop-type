@@ -36,7 +36,7 @@
     "@commitlint/config-angular": "^8.3.4",
     "@commitlint/prompt": "^8.3.5",
     "@commitlint/prompt-cli": "^8.3.5",
-    "ajv": "^6.11.0",
+    "ajv": "^6.12.0",
     "babel-jest": "^25.1.0",
     "bufferutil": "^4.0.1",
     "canvas": "^2.6.1",
@@ -46,7 +46,7 @@
     "eslint-plugin-import": "^2.20.1",
     "husky": "^4.2.3",
     "jest": "^25.1.0",
-    "semantic-release": "^17.0.3",
+    "semantic-release": "^17.0.4",
     "travis-deploy-once": "^5.0.11",
     "utf-8-validate": "^5.0.2"
   },
